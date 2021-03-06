@@ -13,7 +13,11 @@ end
 
 sleep(1)
 puts ""
-puts "Excellent choice"
+string = "Excellent choice"
+string.split("").each{ |letter|
+  print letter
+  sleep(0.05)
+ }
 puts ""
 
 sleep(2)
