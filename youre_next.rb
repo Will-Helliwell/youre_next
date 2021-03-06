@@ -26,7 +26,7 @@ for i in 1..5 do
 end
 
 puts "WARNING - the Pentagon firewall is about to detect your intrusion!"
-sleep(1)
+sleep(1.5)
 puts "The CIA will be alerted and a SWAT team will descend upon your basement unless you are able to pull a sweet hacky trick"
 answer = gets.chomp
 sleep(1)
@@ -39,4 +39,4 @@ sleep(1)
 puts "Continuing hack..."
 sleep(1)
 puts ""
-"Flux capacitors neutralised:"
+puts "Flux capacitors neutralised:"
