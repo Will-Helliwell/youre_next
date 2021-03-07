@@ -13,18 +13,18 @@ exclamations = ""
 dots = "."
 
 until answer == "ok"
-  puts "do you wish to hack the pentagon?#{exclamations}"
+  print_comically "Do you wish to hack the pentagon?#{exclamations}\n"
   answer = gets.chomp
   exclamations += "!"
 end
 
 sleep(1)
 puts ""
-print_comically("Excellent choice")
+print_comically "Excellent choice...\n"
 
 sleep(2)
-puts ""
-puts "Hacking into Pentagon mainframe"
+print_comically "Hacking into Pentagon mainframe:\n"
+sleep(1)
 
 for i in 1..5 do
   puts dots
@@ -32,18 +32,16 @@ for i in 1..5 do
   sleep(1)
 end
 
-puts "WARNING - the Pentagon firewall is about to detect your intrusion!"
+print_comically "WARNING - the Pentagon firewall is about to detect your intrusion! "
 sleep(1.5)
-puts "The CIA will be alerted and a SWAT team will descend upon your basement unless you are able to pull a sweet hacky trick"
+print_comically "The CIA will be alerted and a SWAT team will descend upon your basement unless you are able to pull a sweet hacky trick in the next few seconds!\n"
 answer = gets.chomp
 sleep(1)
 puts ""
-puts "PHEW!!!"
+print_comically "PHEW!!!\n"
 sleep(1)
-puts ""
-puts "Great move"
+print_comically "Great move. "
 sleep(1)
-puts "Continuing hack..."
+print_comically "Continuing hack...\n\n"
 sleep(1)
-puts ""
-puts "Flux capacitors neutralised:"
+print_comically "Pentagon servers infiltrated:"
