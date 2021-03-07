@@ -1,11 +1,18 @@
 #!/Users/willhelliwell/.rvm/rubies/ruby-2.6.5/bin/ruby
 small_pause = sleep(0.5)
 
+def print_comically(string)
+  string.split("").each{ |letter|
+    print letter
+    sleep(0.05)
+  }
+end
+
 answer = nil
 exclamations = ""
 dots = "."
 
-until answer == "ok fine den"
+until answer == "ok"
   puts "do you wish to hack the pentagon?#{exclamations}"
   answer = gets.chomp
   exclamations += "!"
@@ -13,14 +20,10 @@ end
 
 sleep(1)
 puts ""
-string = "Excellent choice"
-string.split("").each{ |letter|
-  print letter
-  sleep(0.05)
- }
-puts ""
+print_comically("Excellent choice")
 
 sleep(2)
+puts ""
 puts "Hacking into Pentagon mainframe"
 
 for i in 1..5 do
